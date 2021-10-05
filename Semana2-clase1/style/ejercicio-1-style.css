@@ -1,0 +1,53 @@
+body{
+  padding:20px;
+  height: 100%;
+}
+
+h1{
+font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 34px;
+line-height: 39px;
+color: #2400FF;
+}
+
+p{
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+color: #000000;
+}
+
+.contenedor-img img{
+  padding:0px 20px 8px 0px;
+}
+ul{
+  list-style: none;
+}
+
+li{
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+padding: 10px;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p{
+font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 14px;
+color: #2400FF;
+}
