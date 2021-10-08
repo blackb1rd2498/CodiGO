@@ -1,0 +1,69 @@
+/*selectores generales*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #ffffff;
+}
+
+h1{
+    font-size: 64px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+/*header*/
+
+header{
+    background: #00AAB5;
+    text-align: center;
+    padding: 20px;
+}
+header a{
+    color: white;
+}
+
+header .header-logo{
+    font-size: 64px;
+    margin-bottom: 20px;
+    display: block
+    ;
+}
+
+header .header-navegador{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.portada{
+    background-image: url(../img/image.png);
+}
+
+.myskills{
+    background: #7299FE;
+}
+
+.servicios{
+    background: #FB7171;
+}
+
+.portafolio{
+    background: #FFD233;
+}
+
+.clientes{
+    background: #3F4E62;
+}
+
+.formulario{
+    background: #16A085;
+}
+
+.footer{
+    background: #00AAB5;
+}
