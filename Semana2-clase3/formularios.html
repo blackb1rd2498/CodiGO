@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form method="GET">
+        <div>
+            <h2>Nombre</h2>
+            <input disabled value="fernando" name="name" type="text" placeholder="Ingresa tu nombre" required minlength="6">
+        </div>
+        <hr>
+        <div>
+            <h2>Correo</h2>
+            <input readonly value="fernando.qsu@hotmail.com" type="email" name="email" placeholder="Ingresa tu correo">
+        </div>
+        <hr>
+        <div>
+            <h2>Edad</h2>
+            <input type="number" name="age" placeholder="Ingresa tu edad" required min="18" max="60">
+        </div>
+        <hr>
+        <div>
+            <h2>Fecha de naciemiento</h2>
+            <input type="date" name="born-age" placeholder="Ingresa tu fecha de nacimiento" min="2000-01-01"
+            max="2022-12-01" required>
+        </div>
+        <hr>
+        <div>
+            <h2>Ingresa tu color favorito</h2>
+            <input type="color" name="color" placeholder="Ingresa tu color favorito" required>
+        </div>
+        <hr>
+        <div>
+            <h2>Ingresa tu password</h2>
+            <input type="password" name="password" placeholder="Ingresa tu contraseña" required>
+        </div>
+        <hr>
+        <div>
+            <h2>Ingresa un valor del 0 al 100</h2>
+            <input type="range" name="numero" >
+        </div>
+        <hr>
+        <div>
+            <h2>HOBBIES</h2>
+            <input id="futbol" type="checkbox" name="hobbies" value="futbol">
+            <label for="futbol">Futbol</label>
+            <input id="basket" type="checkbox" name="hobbies" value="basket">
+            <label for="basket">Basket</label>
+        </div>
+        <hr>
+        <div>
+            <h2>GENERO</h2>
+            <input id="sexom" type="radio" name="sexo" value="m">
+            <label for="sexom">Masculino</label>
+            <input id="sexof" type="radio" name="sexo" value="sexof">
+            <label for="sexof">Femenino</label>
+        </div>
+        <hr>
+        <div>
+            <h2>PAIS</h2>
+            <select name="country" required>
+                <option value="">Selecciona tu pais</option>
+                <option value="peru">Perú</option>
+                <option value="chile">Chile</option>
+                <option value="argentina">Argentina</option>
+                <option value="colombia">Colombia</option>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <button>ENVIAR</button>
+        </div>
+    </form>
+</body>
+</html>
