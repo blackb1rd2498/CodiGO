@@ -1,0 +1,179 @@
+/*Selectores generales*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    margin: 40px;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+section{
+    margin-bottom: 30px;
+}
+
+.parrafos{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+
+img{
+    padding: 10px;
+}
+
+ol{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    line-height: 44px;
+    list-style: disc;
+    font-weight: bold;
+}
+/*header*/
+
+header{
+    background-color: #00AF1C;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+header
+.header-logo{
+    color: #fff;
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+header
+nav
+ul{
+    display: flex;
+}
+
+header
+nav
+a{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 18px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/*home*/
+.home
+h2{
+    color:#3B06D2;
+}
+
+/*Servicios*/
+.servicios
+h2
+{
+    color: #D206B2;
+}
+
+.servicios
+.li-l1{
+    color:#FF0000 ;
+}
+
+.servicios
+.li-l2{
+    color:blue ;
+}
+
+.servicios
+.li-l3{
+    color:#a8a13f ;
+}
+
+.servicios
+.li-l4{
+    color:rgb(0, 191, 255) ;
+}
+
+/*Portafolio*/
+.portafolio
+h2{
+    color: #AAD206;
+}
+
+.portafolio
+.li-l5{
+    color:#AE8800 ;
+}
+
+.portafolio
+.li-l6{
+    color:brown ;
+}
+
+.portafolio
+.li-l7{
+    color:#3B06D2 ;
+}
+
+.portafolio
+.li-l8{
+    color:darkolivegreen ;
+}
+
+/*contacto*/
+.contacto
+h2{
+    color: #06D2C6;
+}
+
+.contacto
+.form_in_nombreApellido{
+    width: 95%;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.contacto
+.form_text_detalle{
+    width: 95%;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.contacto
+.form_btn_enviar{
+    /*colores*/
+    background-color: white;
+    color: #22A900;
+    border: 1px solid #22A900;
+    /*estilo de fuente*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 20px 60px 20px 60px; 
+}
+
+/*footer*/
+footer{
+    /*direccion de bloque*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px;
+    /*colores*/
+    background-color: #00AF1C;
+    color: white;
+}
+
+
