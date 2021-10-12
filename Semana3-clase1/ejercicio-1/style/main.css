@@ -1,7 +1,6 @@
 /*PROPIEDADES GLOBALES*/
 
 body{
-    margin: 30px;
     font-family: Arial, Helvetica, sans-serif;
     width: 600px;
     margin: auto;
@@ -22,11 +21,6 @@ h2{
 h3{
     font-size: 27px;
     font-weight: bold;
-}
-
-section{
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .btn-class{
@@ -70,32 +64,44 @@ header{
 
 /*CUSTOMIZE-EMAILS*/
 
+.customize-emails{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.customize-emails
 .emails-rows{
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-.emails-rows:first-child div{
-    padding: 30px;
+.customize-emails
+.emails-rows
+.customiza-p{
+    width: 260px;
 }
 
-.emails-rows:nth-child(2) div{
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.customize-emails
+.emails-rows
+img{
+    width: 260px;
+    height: 260px;
 }
 
-.emails-rows:last-child div{
-    padding: 30px;
-}
 
 /*BOOST-EMAILS*/
 
-.boost-emails div{
-    border: 1px solid #000; width: 100%; margin: auto; margin-top: 5%; margin-bottom: 5%;
+.boost-emails .divition{
+    border: 1px solid #000; 
+    width: 100%; 
+    margin-top: 8%; 
+    margin-bottom: 8%;
 }
 
 /*FOOTER*/
