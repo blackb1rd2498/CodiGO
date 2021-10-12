@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+    <style>
+        p::first-letter{
+            font-size: 40px;
+        }
+
+        p::first-line{
+          background: red;
+        }
+
+        p::before{
+            content: " . ";
+        }
+
+        p::after{
+            content: "contenido after";
+        }
+
+        p::selection{
+            background: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel aliquid eum tempore neque iusto. Natus alias deleniti cupiditate illo saepe consectetur possimus maiores id ex! Hic eaque mollitia nihil quia.</p>
+</body>
+</html>
