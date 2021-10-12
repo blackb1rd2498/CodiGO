@@ -1,5 +1,4 @@
 /*Selectores generales*/
-
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -36,8 +35,8 @@ ol{
     list-style: disc;
     font-weight: bold;
 }
-/*header*/
 
+/*header*/
 header{
     background-color: #00AF1C;
     display: flex;
