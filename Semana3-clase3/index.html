@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 400px;
+            height: 400px;
+            background: rgb(18, 110, 185);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box .box-one,
+        .box .box-two{
+            position: absolute;
+            transition: all .5s ease-in;
+        }
+
+        .box .box-one{
+            right: 0px;
+            bottom: 20px;
+            width: 50%;
+            background: yellow;
+        }
+
+        .box .box-two{
+            left: 0px;
+            top: 20px;
+            width: 50%;
+            background: yellow;
+        }
+
+        .box:hover .box-one{
+            top: inherit;
+            bottom: 20px;
+            background: rgb(29, 252, 0);
+        }
+
+        .box:hover .box-two{
+            top: 10%;
+            height: 80%;
+            left: 10%;
+            background: rgb(51, 255, 245);
+        }
+
+        header{
+            position: fixed;
+            z-index: 1;
+            top: 0%;
+            left: 0%;
+            background: black;
+            color: white;
+            width: 100%;
+            padding: 20px;
+        }
+
+        html{
+            height: 200%;
+        }
+        body{
+            padding-top: 140px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BIENVENIDOS A LAS POSICIONES</h1>
+    </header>
+    <div class="box">
+        <div class="box-one">Caja 1</div>
+        <div class="box-two">Caja 2</div>
+    </div>
+    <br>
+    <div class="box">
+        <div class="box-one">Caja 1</div>
+        <div class="box-two">Caja 2</div>
+    </div>
+</body>
+</html>
