@@ -1,0 +1,352 @@
+
+/*------------- GLOBAL ELEMENTS -------------*/
+body{
+    font-family: 'Roboto';
+}
+
+main{
+    flex-grow: 1;
+    position: relative;
+}
+
+h1{
+    font-size: 64px;
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
+}
+h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+/*-------------  HEADER  -------------*/
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00AAB5;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+
+.header-logo{
+    text-decoration: none;
+}
+
+.header-logo 
+span{
+    font-size: 1.5rem;
+}
+
+.header 
+nav{
+    margin-right: 4rem;
+    width: 500px;
+}
+
+.header-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header-nav 
+li{
+    color: white;
+}
+
+.header-nav 
+li 
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/*------------- SECTION FRONT-PAGE-------------*/
+.front-page{
+    background: url(../img/image.png) no-repeat center center ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.front-page 
+h2{  
+    font-size: 64px;
+    color: white;
+    font-weight: bold;
+    padding: 6rem;
+    text-align: center;
+}
+
+.front-container{
+    position: relative;
+}
+
+.front-paragraph {
+    position: absolute;
+    top: 14rem;
+    left: 18%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    background: rgba(114, 153, 254, 0.5);
+    color: white;
+    padding: 20px;
+}
+
+/*------------- SECTION MY SKILLS-------------*/
+.myskills{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #7299FE;
+    padding-bottom: 50px;
+}
+
+.myskills
+h2{
+    padding: 2rem;
+    color: #B508A3;
+    text-align: center;
+}
+
+.myskills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 40px 0px 40px
+}
+
+.each-skill{
+    width: 400px;
+    padding: 0px 20px 20px 20px;
+}
+
+.percentage{
+    width: 100%;
+    height: 15px;
+    background: white;
+    margin-right: 20px;
+}
+
+.miss-percentage{
+    height: 15px;
+    background: black;
+}
+.html{width: 80%;}
+.css{width: 90%;}
+.js{width: 45%;}
+.react{width: 50%;}
+.angular{width: 60%;}
+.python{width: 85%;}
+.figma{width: 55%;}
+.node-js{width: 35%;}
+
+
+/*------------- SECTION SERVICE-------------*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service{
+    width: 100%;
+    background: #FB7171;
+    padding-bottom: 50px;
+}
+
+.service 
+h2{
+    padding: 2rem;
+    color: #00CC9B;    
+    text-align: center;   
+}
+
+.service 
+h3{
+    font-size: 21px;
+}
+
+.service-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.each-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+    width: 300px;
+}
+
+/*------------- SECTION PORTFOLIO-------------*/
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFD233;
+    padding-bottom: 80px;
+}
+
+.portfolio 
+h2{
+    padding: 2rem;
+    color: #8402A5;    
+    text-align: center;
+}
+
+.portfolio 
+ol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.portfolio 
+li{
+    padding: 1rem;
+}
+
+/*------------- SECTION CLIENT-------------*/
+.clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #3F4E62;
+    padding-bottom: 80px;
+}
+
+.clients 
+h2{
+    padding: 3rem  2rem 1rem 2rem;;    
+    text-align: center;
+    color: #FF00C7;
+}
+
+.clients 
+ol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%; 
+}
+
+.clients 
+li{
+    padding: 1rem;
+}
+
+/*------------- SECTION FORM-------------*/
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #16A085;
+}
+
+.form 
+h2{
+    padding: 3rem 1rem 1rem 1rem;
+    color: #CEE000;
+    text-align: center;
+}
+
+.form-container{
+    text-align: center;
+    width: 100%;
+}
+
+.input-container{
+    padding: 1rem 0 1rem 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+
+.input-container
+input{
+    width: 28%;
+    height: 59px;
+    margin: 0 1rem 0 1rem;
+    padding-left: 0.5rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.textarea-container
+textarea{
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 59.5%;
+    height: 112px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.button-container
+button{
+    width: 167px;
+    height: 56px;
+    background: #233451;
+    color: white;
+    margin-bottom: 4rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/*------------- FOOTER -------------*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00AAB5;
+    height: 117px;
+    padding: 0 4rem 0 4rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+}
