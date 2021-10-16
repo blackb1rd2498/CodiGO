@@ -273,6 +273,7 @@ li{
     flex-direction: column;
     align-items: center;
     background: #16A085;
+    margin: auto;
 }
 
 .form 
@@ -283,43 +284,62 @@ h2{
 }
 
 .form-container{
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:  center;
+    justify-content: space-around;
     width: 100%;
+    padding-top: 20px;
 }
 
 .input-container{
-    padding: 1rem 0 1rem 0;
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content:center;
+    width: 100%;
+}
+
+.input-content{
+    display: flex;
+    flex-wrap: wrap;
     justify-content:center;
 }
 
 .input-container
 input{
-    width: 28%;
     height: 59px;
-    margin: 0 1rem 0 1rem;
+    margin: 0 1rem 1rem 1rem;
     padding-left: 0.5rem;
+    padding-right: 10rem;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
+    width: 100%;
+}
+
+.textarea-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.textarea-content{
+    width: 90%;
 }
 
 .textarea-container
 textarea{
     padding-top: 1rem;
-    padding-left: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 3rem;
-    width: 59.5%;
     height: 112px;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
+    width: 100%;
 }
 
 .button-container
