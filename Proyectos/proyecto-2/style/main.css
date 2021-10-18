@@ -83,7 +83,7 @@ a{
 }
 
 /*------------- SECTION FRONT-PAGE-------------*/
-.front-page{
+#front-page{
     background: url(../img/image.png) no-repeat center center ;
     background-size: cover;
     display: flex;
@@ -93,7 +93,7 @@ a{
     position: relative;
 }
 
-.front-page 
+#front-page 
 h2{  
     font-size: 64px;
     color: white;
@@ -120,7 +120,7 @@ h2{
 }
 
 /*------------- SECTION MY SKILLS-------------*/
-.myskills{
+#myskills{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -128,7 +128,7 @@ h2{
     padding-bottom: 50px;
 }
 
-.myskills
+#myskills
 h2{
     padding: 2rem;
     color: #B508A3;
@@ -169,30 +169,30 @@ h2{
 
 
 /*------------- SECTION SERVICE-------------*/
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}   
-
-.service{
+#service{
     width: 100%;
     background: #FB7171;
     padding-bottom: 50px;
     
 }
 
-.service 
+#service 
 h2{
     padding: 2rem;
     color: #00CC9B;    
     text-align: center;   
 }
 
-.service 
+#service 
 h3{
     font-size: 21px;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
 
 .service-container{
     display: flex;
@@ -211,7 +211,7 @@ h3{
 }
 
 /*------------- SECTION PORTFOLIO-------------*/
-.portfolio{
+#portfolio{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,27 +219,27 @@ h3{
     padding-bottom: 80px;
 }
 
-.portfolio 
+#portfolio 
 h2{
     padding: 2rem;
     color: #8402A5;    
     text-align: center;
 }
 
-.portfolio 
+#portfolio 
 ol{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.portfolio 
+#portfolio 
 li{
     padding: 1rem;
 }
 
 /*------------- SECTION CLIENT-------------*/
-.clients{
+#clients{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,11 +247,16 @@ li{
     padding-bottom: 80px;
 }
 
-.clients 
+#clients 
 h2{
     padding: 3rem  2rem 1rem 2rem;;    
     text-align: center;
     color: #FF00C7;
+}
+
+#clients 
+li{
+    padding: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .list-clients{
@@ -262,13 +267,9 @@ h2{
     width: 65%; 
 }
 
-.clients 
-li{
-    padding: 1rem 0.5rem 1rem 0.5rem;
-}
 
 /*------------- SECTION FORM-------------*/
-.form{
+#form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -277,7 +278,7 @@ li{
     margin: auto;
 }
 
-.form 
+#form 
 h2{
     padding: 3rem 1rem 1rem 1rem;
     color: #CEE000;
