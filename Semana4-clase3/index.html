@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIAQUERIES</title>
+    <style>
+        div{
+            background: rgb(142, 219, 245);
+        }
+
+        @media (min-width:320px){
+            /* div{
+                background:orange;
+                }*/
+        }
+
+        @media (max-width:780px){
+            
+                div{
+                    background:pink;
+                }
+            
+        }
+
+        @media (min-height:400px){
+            /*
+                div{
+                    background:black;
+                }
+            */
+        }
+        
+        @media (max-height:800px){
+            /*
+                div{
+                    background:blue;
+                }
+            */
+        }
+
+         @media (orientation: landscape){
+             div{
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: space;
+                 color: black;
+             }
+         }
+
+         @media (orientation: portrait){
+             div{
+                display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 color: white;
+             }
+         }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            header
+        </header>
+        <main>
+            main
+        </main>
+        <footer>
+            footer
+        </footer>
+    </div>
+</body>
+</html>
