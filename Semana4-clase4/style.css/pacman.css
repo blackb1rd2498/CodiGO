@@ -266,9 +266,15 @@ h1{
     margin: 0;
     font-family: 'Slabo 27px', serif;
     position: absolute;
-    top: 20rem;
     display: flex;
     align-items: center;
+}
+
+@media (min-width:450px) {
+   .size-d{ 
+       height: 50vh;
+       top: 25%;
+    }
 }
 
 .pacman{
