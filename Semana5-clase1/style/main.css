@@ -1,0 +1,292 @@
+/*COLORS*/
+/*SIZE*/
+/*PADDING*/
+/*MAIN BUTTONS*/
+.btn-container {
+  width: 100%;
+  height: 250px;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: grey;
+}
+
+.btn-container .btn {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: orange;
+  font-size: 2rem;
+}
+
+.btn-container .btn:first-child {
+  background-color: #924200dc;
+  font-size: 2rem;
+}
+
+.btn-container .btn:first-child:hover {
+  background-color: #924200dc;
+  font-size: 4rem;
+  border: 2px solid black;
+}
+
+.btn-container .btn:last-child {
+  background-color: orange;
+  font-size: 2rem;
+}
+
+.btn-container .btn:last-child:hover {
+  background-color: orange;
+  font-size: 4rem;
+  border: 2px solid black;
+}
+
+.btn-container .btn:nth-child(2) {
+  background-color: lightblue;
+  font-size: 4rem;
+}
+
+.btn-container .btn:nth-child(2):hover {
+  background-color: lightblue;
+  font-size: 2rem;
+  border: 2px solid black;
+}
+
+.btn-container .btn:nth-child(3) {
+  background-color: blue;
+  font-size: 2rem;
+}
+
+.btn-container .btn:nth-child(3):hover {
+  background-color: blue;
+  font-size: 4rem;
+  border: 2px solid black;
+}
+
+.btn-container .btn:nth-child(4) {
+  background-color: lightgreen;
+  font-size: 4rem;
+}
+
+.btn-container .btn:nth-child(4):hover {
+  background-color: lightgreen;
+  font-size: 2rem;
+  border: 2px solid black;
+}
+
+.btn-container .btn:nth-child(5) {
+  background-color: #8633FF;
+  font-size: 2rem;
+}
+
+.btn-container .btn:nth-child(5):hover {
+  background-color: #8633FF;
+  font-size: 4rem;
+  border: 2px solid black;
+}
+
+.btn-container .btn:nth-child(6) {
+  background-color: red;
+  font-size: 2rem;
+}
+
+.btn-container .btn:nth-child(6):hover {
+  background-color: red;
+  font-size: 4rem;
+  border: 2px solid black;
+}
+
+.btn-container .btn:nth-child(7) {
+  background-color: white;
+  font-size: 4rem;
+}
+
+.btn-container .btn:nth-child(7):hover {
+  background-color: white;
+  font-size: 2rem;
+  border: 2px solid black;
+}
+
+.btn-container .btn:hover {
+  background-color: white;
+  font-size: 2rem;
+  border: 2px solid black;
+}
+
+/*FONTS*/
+body {
+  color: lightgreen;
+  font-size: 12px;
+  font-family: arial;
+}
+
+a {
+  color: red;
+}
+
+p {
+  font-size: 13px;
+  font-family: "verdana";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: red;
+  font-family: "arial";
+}
+
+/*HEADER*/
+header:hover {
+  background: lightblue;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  background: lightblue;
+}
+
+header ul {
+  padding: 20px;
+}
+
+header > li {
+  color: red;
+}
+
+header .nombre-clase {
+  color: #924200dc;
+}
+
+header ul li {
+  padding: 20px;
+  background: lightblue;
+}
+
+header ul li:last-child {
+  margin-right: 20px;
+}
+
+header ul li:first-child {
+  margin-left: 20px;
+}
+
+header ul li:hover {
+  background: lightgreen;
+}
+
+/*EXTEND*/
+main, header, footer {
+  padding: 20px;
+  background: lightcoral;
+}
+
+header, footer {
+  padding: 30px;
+  background: lightseagreen;
+}
+
+/*INTERPOLATION*/
+div {
+  background: url("https::/www.larepublica.com/mi_imagen.png");
+}
+
+/*MXINGS*/
+div {
+  padding: 0px;
+  color: black;
+}
+
+div {
+  padding: 20px;
+  color: black;
+}
+
+/*CONDICIONES*/
+/*colors*/
+/*spaces*/
+div {
+  padding: 0px;
+  color: black;
+}
+
+div {
+  padding: 30px;
+  color: black;
+}
+
+div {
+  font-size: 34px;
+}
+
+div {
+  font-size: 24px;
+}
+
+div {
+  font-size: 18px;
+}
+
+div {
+  font-size: 16px;
+}
+
+.space-m-4px {
+  margin: 4px;
+}
+
+.space-m-8px {
+  margin: 8px;
+}
+
+.space-m-12px {
+  margin: 12px;
+}
+
+.space-m-16px {
+  margin: 16px;
+}
+
+.space-m-20px {
+  margin: 20px;
+}
+
+.space-m-24px {
+  margin: 24px;
+}
+
+.color-red {
+  margin: red;
+}
+
+.color-blue {
+  margin: blue;
+}
+
+.color-green {
+  margin: green;
+}
+
+.color-yellow {
+  margin: yellow;
+}
+
+.color-primary {
+  color: red;
+}
+
+.color-secondary {
+  color: blue;
+}
+
+.ejemplo-map {
+  font-size: 34px;
+  color: red;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,95 @@
+@import "./variables";
+
+@mixin btn-size-color($color-red, $font-size-small) {
+    background-color: $color-red;
+    font-size: $font-size-small;
+}
+
+/*MAIN BUTTONS*/
+.btn-container{
+    width: 100%;
+    height: 250px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    background: $color-grey; 
+
+    .btn{
+        cursor: pointer; 
+        border: 1px solid transparent;
+
+        @include btn-size-color($color-orange, $font-size-small);
+
+    
+        &:first-child{
+            @include btn-size-color($color-brown, $font-size-small);
+            &:hover{
+                @include btn-size-color($color-brown, $font-size-big);
+                border:  2px solid $color-black;
+            }
+        }
+
+        &:last-child{
+            @include btn-size-color($color-orange, $font-size-small);
+            &:hover{
+                @include btn-size-color($color-orange, $font-size-big);
+                border:  2px solid $color-black;
+            }
+        }
+        
+        &:nth-child(2){
+            @include btn-size-color($color-lightblue, $font-size-big);
+            &:hover{
+                @include btn-size-color($color-lightblue, $font-size-small);
+                border:  2px solid $color-black;
+            }
+        }       
+
+        &:nth-child(3){
+            @include btn-size-color($color-blue, $font-size-small);
+            &:hover{
+                @include btn-size-color($color-blue, $font-size-big);
+                border:  2px solid $color-black;
+            }
+        }
+
+        &:nth-child(4){
+            @include btn-size-color($color-lightgreen, $font-size-big);
+            &:hover{
+                @include btn-size-color($color-lightgreen, $font-size-small);
+                border:  2px solid $color-black;
+            }
+        }       
+
+        &:nth-child(5){
+            @include btn-size-color($color-purple, $font-size-small);
+            &:hover{
+                @include btn-size-color($color-purple, $font-size-big);
+                border:  2px solid $color-black;
+            }
+        }
+
+        &:nth-child(6){
+            @include btn-size-color($color-red, $font-size-small);
+            &:hover{
+                @include btn-size-color($color-red, $font-size-big);
+                border:  2px solid $color-black;
+            }
+        }
+
+        &:nth-child(7){
+            @include btn-size-color($color-white, $font-size-big);
+            &:hover{
+                @include btn-size-color($color-white, $font-size-small);
+                border:  2px solid $color-black;
+            }
+        }
+
+        &:hover{
+                @include btn-size-color($color-white, $font-size-small);
+                border:  2px solid $color-black;
+            }
+    }
+}
+
