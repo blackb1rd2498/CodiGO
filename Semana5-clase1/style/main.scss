@@ -136,6 +136,10 @@ $font-sizes-map:(
     h4:12px,
 );
 
+.ejemplo-map{
+    font-size: map-get($map:$font-sizes-map, $key: h1 );
+}
+
 /*colors*/
 $colors:red, blue,green,yellow;
 
@@ -217,7 +221,3 @@ div{
     }
 }
 
-.ejemplo-map{
-    font-size: map-get($map:$font-sizes-map, $key: h1 );
-    color: map-get($map: $color-branding, $key: primary);
-}
