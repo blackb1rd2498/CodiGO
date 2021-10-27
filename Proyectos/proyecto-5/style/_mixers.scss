@@ -1,0 +1,35 @@
+@import "./_variables.scss";
+
+/*FLEX MIXERS*/
+@mixin d-flex-center($flex:flex, $justify-content:center, $align-items:center) {
+    display: $flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin d-flex-spBet($flex:flex, $justify-content:space-between, $align-items:center) {
+    display: $flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin d-flex-spAro($flex:flex, $justify-content:space-around, $align-items:center) {
+    display: $flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+/*CARDS CONTAINER*/
+@mixin card($card-width:360px) {
+    width: $card-width;
+}
+
+/*BTN MIXER*/
+@mixin btn-font-color($btn-bck:$btn-color, $btn-font-col:$btn-white, $btn-font-size:map-get($map: $font-size-map, $key:btn )) {
+    background-color: $btn-bck;
+    color: $btn-font-col;
+    font-size: $btn-font-size;
+    font-weight: bold;
+    line-height: 25px;
+}
+

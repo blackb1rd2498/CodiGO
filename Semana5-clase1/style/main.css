@@ -209,6 +209,10 @@ div {
 }
 
 /*CONDICIONES*/
+.ejemplo-map {
+  font-size: 34px;
+}
+
 /*colors*/
 /*spaces*/
 div {
@@ -283,10 +287,5 @@ div {
 
 .color-secondary {
   color: blue;
-}
-
-.ejemplo-map {
-  font-size: 34px;
-  color: red;
 }
 /*# sourceMappingURL=main.css.map */
