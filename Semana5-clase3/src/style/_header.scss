@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    background: lightslategrey;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        font-size: 24px;
+    }
+
+    &__nav{
+        background: cornflowerblue;
+    }
+
+    &--dark{
+        background: black;
+        color: blanchedalmond;
+
+        a{
+            color: whitesmoke;
+        }
+    }
+}
