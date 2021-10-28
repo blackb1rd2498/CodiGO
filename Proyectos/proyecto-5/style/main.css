@@ -152,6 +152,7 @@ body {
 }
 
 .container .cards-cont .card {
+  overflow: hidden;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border-radius: 18px;

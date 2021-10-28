@@ -353,9 +353,24 @@ a:nth-child(5):hover{
 }
 
 /*REPOS*/
+.repos-container{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.repos-container
+h3{
+    font-size: 26px;
+    font-weight: bold;
+}
 
 .repos{
     width:40px;
     height: 40px;
-    background-color: blueviolet;
+    border: 4px solid #6D0AD3;
+    border-radius: 8px;
 }
