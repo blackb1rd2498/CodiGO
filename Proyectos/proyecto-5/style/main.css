@@ -5,8 +5,68 @@
 /*FONT SIZE*/
 /*COLORS*/
 /*FLEX MIXERS*/
-/*CARDS CONTAINER*/
 /*BTN MIXER*/
+.btn {
+  background-color: #2ECC71;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  border: none;
+  padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+  border-radius: 4px;
+  border: 2px solid #2ECC71;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  letter-spacing: 0.18em;
+}
+
+.btn-budget {
+  border: none;
+  background: #007AE9;
+  border-radius: 4px;
+  letter-spacing: 0.2em;
+  font-size: 10px;
+  color: white;
+  height: 24px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.btn-rooms {
+  border: 1px solid #D7D8D9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  color: #007AE9;
+  background: transparent;
+  font-size: 10px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  letter-spacing: 0.2em;
+  height: 32px;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .btn-rooms {
+    margin-bottom: 1rem;
+  }
+}
+
+.btn:hover {
+  background-color: white;
+  border-radius: 4px;
+  border: 2px solid #2ECC71;
+  color: #2ECC71;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  font-size: 16px;
+}
+
 /*MARGIN AND PADDING CLASSES*/
 .space-m-4px {
   margin: 4px;
@@ -61,7 +121,7 @@
 }
 
 body {
-  background-color: grey;
+  background-color: #cacaca;
 }
 
 /*CARDS*/
@@ -92,10 +152,12 @@ body {
 }
 
 .container .cards-cont .card {
-  width: 360px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border-radius: 18px;
+  max-width: 360px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .container .cards-cont .card:hover {
@@ -236,35 +298,174 @@ img:hover {
   margin-left: 1rem;
 }
 
-.container .cards-cont .card .info-card .price-btn .btn {
-  background-color: #2ECC71;
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 25px;
-  font-family: "Open Sans";
-  font-size: 14px;
-  border: none;
-  padding: 0.5rem 1.8rem 0.5rem 1.8rem;
-  border-radius: 4px;
-  border: 2px solid #2ECC71;
-  cursor: pointer;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  letter-spacing: 0.18em;
-}
-
-.container .cards-cont .card .info-card .price-btn .btn:hover {
-  background-color: white;
-  border-radius: 4px;
-  border: 2px solid #2ECC71;
-  color: #2ECC71;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  font-size: 16px;
-}
-
 .container:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container:nth-child(2) .cards-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel {
+  max-width: 512px;
+  border-radius: 18px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 18px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel:nth-child(2) {
+  max-width: 608px;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .img-card {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 256px;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .img-card img {
+  max-width: 100%;
+  height: 256px;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .img-card a {
+  position: absolute;
+  z-index: 9;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .img-card a .hearth {
+  width: 24px;
+  height: 24px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .img-card a .hearth:hover {
+  width: 50px;
+  height: 50px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0);
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .info-card {
+  background-color: white;
+  border-radius: 0 0 18px 18px;
+  border-top: none;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .info-card .h3-flavours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .info-card .h3-flavours h3 {
+  font-family: "DM Serif Display";
+  font-size: 24px;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .info-card .h3-flavours .flavours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .info-card .h3-flavours .flavours
+img:hover {
+  width: 30px;
+  height: 30px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 550px) {
+  .container:nth-child(2) .cards-cont .card-hotel .rating {
+    margin-bottom: 1rem;
+  }
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .rating .starts-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .rating .starts-cont .stars {
+  padding-bottom: 0;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .rating .budget {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .rooms-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +477,76 @@ img:hover {
           align-items: center;
 }
 
-.container:nth-child(2) .cards-cont {
+.container:nth-child(2) .cards-cont .card-hotel .rooms-price .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .rooms-price .price h1 {
+  font-family: "DM Serif Display";
+  font-size: 48px;
+  line-height: 25px;
+  text-align: right;
+  letter-spacing: 0.02em;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .rooms-price .price h1 span {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .rooms-price .price div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .rooms-price .price div h4 {
+  font-size: 24px;
+  color: #B1B4B9;
+  /* identical to box height, or 114% */
+  text-align: right;
+  letter-spacing: 0.02em;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  font-weight: bold;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .rooms-price .price div span {
+  color: #B1B4B9;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  font-weight: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel p {
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: #6E798C;
+  margin-top: 1.2rem;
+  margin-bottom: 1.5rem;
+  padding-right: 2rem;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .saving-btn {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,5 +556,27 @@ img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .saving-btn p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #2ECC71;
+  letter-spacing: 0.02em;
+  padding: 0;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .saving-btn .btn-cont {
+  width: 100%;
+}
+
+.container:nth-child(2) .cards-cont .card-hotel .saving-btn .btn-cont .btn {
+  font-size: 17px;
+  height: 82px;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+{
+  "name": "codigo-week-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackb1rd2498/CodiGO-Week-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackb1rd2498/CodiGO-Week-2/issues"
+  },
+  "homepage": "https://github.com/blackb1rd2498/CodiGO-Week-2#readme",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

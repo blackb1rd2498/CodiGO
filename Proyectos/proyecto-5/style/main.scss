@@ -1,5 +1,6 @@
 @import "./_variables.scss";
 @import "./_mixers.scss";
+@import "./btn";
 
 /*MARGIN AND PADDING CLASSES*/
 $spaces: 4px, 8px, 12px ,16px ,20px , 24px;
@@ -21,7 +22,7 @@ $spaces: 4px, 8px, 12px ,16px ,20px , 24px;
 }
 
 body{
-    background-color: $color-grey;
+    background-color: $color-grey
 }
 
 /*CARDS*/
@@ -35,9 +36,10 @@ body{
         width: 100%;
         
        .card{
-            @include card();
             transition: 0.5s ease-in-out;
             border-radius: 18px;
+            max-width: 360px;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
 
             &:hover{
                 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -127,38 +129,191 @@ body{
                             margin-left: 1rem;
                         }
                     }
-
-                    .btn{
-                        @include btn-font-color();
-                        font-family: map-get($map: $font-family-map, $key: secondary);
-                        font-size: map-get($map: $font-size-map, $key:btn );                       
-                        border: none;
-                        padding: 0.5rem 1.8rem 0.5rem 1.8rem;
-                        border-radius: 4px;
-                        border: 2px solid $btn-color;
-                        cursor: pointer;
-                        transition: .3s ease-in-out;
-                        letter-spacing: 0.18em;
-                    }
-                    
-                    .btn:hover{
-                        background-color: white;
-                        border-radius: 4px;
-                        border: 2px solid $btn-color;
-                        color: $btn-color;
-                        transition: .3s ease-in-out;
-                        font-size: 16px;
-                    }
                 }
             }
         }
     }
 
     &:nth-child(2){
-        @include d-flex-spBet();
+        @include d-flex-center();
 
         .cards-cont{
-            @include d-flex-center;
+            @include d-flex-spAro;
+            flex-wrap: wrap;
+            width: 100%;
+            
+            .card-hotel{
+                max-width: 512px;
+                border-radius: 18px;
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+                overflow: hidden;
+
+                &:hover{
+                    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                    border-radius: 18px;
+                    transition: 0.5s ease-in-out;
+                    overflow: hidden;
+                }
+                &:nth-child(2){
+                    max-width: 608px;
+                }
+
+               .img-card{
+                   position: relative;
+                   max-width: 100%;
+                   overflow: hidden;
+                   height: 256px;
+                   
+                   img{
+                       max-width: 100%;
+                       height: 256px;
+                   }
+
+                   a{
+                        position: absolute;
+                        z-index: 9;
+                        top: 1.5rem;
+                        right: 1.5rem;
+
+                        .hearth{
+                            width: 24px;
+                            height: 24px;
+                            transition: 0.5s ease-in-out;   
+                        }
+
+                        .hearth:hover{
+                            width: 50px;
+                            height: 50px;
+                            box-shadow: 1px 1px 1px 1px rgba(0,0,0,0);
+                            transition: 0.5s ease-in-out;
+                        }
+                    }
+                }
+
+                .info-card{
+                    background-color: $btn-white;
+                    border-radius: 0 0 18px 18px;
+                    border-top: none;
+    
+                    .h3-flavours{
+                        @include d-flex-spBet();
+                        margin-bottom: 0.7rem;
+                        
+                        h3{
+                            font-family:map-get($map: $font-family-map, $key:primary );
+                            font-size: map-get($map: $font-size-map, $key:h3);
+                        }
+    
+                        .flavours{
+                            @include d-flex-spBet();
+                            height: 35px;
+                            transition: 0.3s ease-in-out;
+                        }
+    
+                        .flavours
+                        img:hover{
+                            width: 30px;
+                            height: 30px;
+                            transition: 0.3s ease-in-out;
+                        }
+                    }
+                }
+
+                .rating{
+                    @include d-flex-start;
+                    @media (max-width:550px) {
+                        margin-bottom: 1rem;
+                    }
+
+                    .starts-cont{
+                        @include d-flex-spAro;
+                        .stars{
+                            padding-bottom: 0;
+                        }
+                    }
+                    .budget{
+                        padding-bottom: 0;
+                        padding-top: 0;
+                    }
+                }
+
+                .rooms-price{
+                    @include d-flex-spBet;
+
+                    .price{
+                        @include d-flex-end;
+                        flex-direction: column;
+
+                         h1{
+                            font-family: map-get($map: $font-family-map, $key: primary );
+                            font-size:map-get($map: $font-size-map, $key: h1) ;
+                            line-height: 25px;
+                            text-align: right;
+                            letter-spacing: 0.02em;
+                            span{
+                                font-size: map-get($map: $font-size-map, $key: btn );
+                                letter-spacing: 0.02em;
+                            }
+                         }
+                         div{
+                             @include d-flex-end;
+                            h4{
+                                font-size: map-get($map: $font-size-map, $key: h3);
+                                color: $disc-color;
+                                /* identical to box height, or 114% */
+                                text-align: right;
+                                letter-spacing: 0.02em;
+                                text-decoration-line: line-through;
+                                font-weight: bold;                           
+                             }
+                             span{
+                                color: $disc-color;
+                                font-size: map-get($map: $font-size-map, $key: btn );
+                                letter-spacing: 0.02em;
+                                font-weight: 0;
+                                text-decoration-line: none;
+                            }
+                         }
+                         
+                    }
+                }
+
+                p{
+                    font-family: map-get($map: $font-family-map, $key: secondary );
+                    font-size: map-get($font-size-map, p);
+                    color: $p-color;
+                    margin-top: 1.2rem;
+                    margin-bottom: 1.5rem;
+                    padding-right: 2rem;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 25px;
+                }
+
+                .saving-btn{
+                    width: 100%;
+                    @include d-flex-center;
+                    flex-direction: column;
+
+                    p{
+                        margin-bottom: 10px;
+                        font-size: map-get($map: $font-size-map, $key: btn);
+                        color:$btn-color;
+                        letter-spacing: 0.02em;
+                        padding: 0;
+                    }
+
+                    .btn-cont{
+                        width: 100%;
+                        .btn{
+                            font-size: 17px;
+                            height: 82px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
     }
 }
