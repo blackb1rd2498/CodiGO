@@ -36,6 +36,7 @@ body{
         width: 100%;
         
        .card{
+            overflow: hidden;
             transition: 0.5s ease-in-out;
             border-radius: 18px;
             max-width: 360px;
