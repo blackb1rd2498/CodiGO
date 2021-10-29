@@ -13,6 +13,7 @@
         display: none;
         @media (max-width:320px) {
             display: inline-block;
+            -webkit-appearance: none;  
         } 
     }
 
@@ -20,17 +21,12 @@
         display: none;
         @media(max-width:420px) {
             display: inline-block;
-            .input[type="search"] {
-                -webkit-appearance: none;
-            }
-        
+            -webkit-appearance: none;        
         }
+
         @media (max-width:320px) {
             display: none;
-            .input[type="search"] {
-                -webkit-appearance: none;
-            }
-        
+            -webkit-appearance: none;    
         } 
     }
     
