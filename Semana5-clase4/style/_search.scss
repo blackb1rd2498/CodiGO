@@ -8,8 +8,29 @@
     color: #B9BDCF;
     font-family: Roboto;
     font-weight: 100;
+
+    &__small{
+        display: none;
+        @media (max-width:320px) {
+            display: inline-block;
+        } 
+    }
+
+    &__medium{
+        display: none;
+        @media(max-width:420px) {
+            display: inline-block;
+        }
+        @media (max-width:320px) {
+            display: none;
+        } 
+    }
+    
+    &__large{
+        display: inline-block;
+        @media (max-width:420px) {
+            display: none;
+        } 
+    }
 }
 
-@media (max-width:420px) {
-    input:placeholder-shown "Title, companies, experti...";
-}   

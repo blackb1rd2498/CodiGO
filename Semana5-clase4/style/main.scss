@@ -76,6 +76,13 @@ main{
                 margin: 0.5rem;
             }
 
+            &__resize{
+                width: 20%;
+                @media (max-width:1000px) {
+                    width: 100%;
+                }
+            }
+
             .checkbox{
                 label{
                     font-family: Poppins;
@@ -86,6 +93,19 @@ main{
                     color: #334680;
                 }
             }
+
+            /*CLASS FOR PAGE 2 JOB OFFERS*/
+            .back-to-search{
+                a{
+                    text-decoration: none;
+                    color: #1E86FF;
+
+                    &:nth-child(2){
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            /* END OF CLASS FOR PAGE 2 JOB OFFERS*/
 
             h3{
                 font-family: Poppins;
@@ -126,6 +146,21 @@ main{
                     line-height: 21px;
                     color: #334680;
                 }
+                
+                /*CLASS FOR PAGE 2 JOB OFFERS*/
+                .how-to-apply-info{
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #334680;
+                    a{
+                        text-decoration: none;
+                        color: #1E86FF;
+                    }
+                }
+                /* END OF CLASS FOR PAGE 2 JOB OFFERS*/
             }
         }
         .jobs{
@@ -134,6 +169,13 @@ main{
 
             @media (max-width:1000px) {
                 width: 100%;
+            }
+
+            &__resize{
+                width: 80%;
+                @media (max-width:1000px) {
+                    width: 100%;
+                }
             }
 
             .btn-pages{
