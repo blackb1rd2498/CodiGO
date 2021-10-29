@@ -38,9 +38,7 @@ main{
         .search-container{
             position: relative;
             width: 90%;
-            @media (max-width:420px) {
-                input:placeholder-shown "Title, companies, experti...";
-            }        
+   
             i{
                 position: absolute;
                 top: 1.2rem;
