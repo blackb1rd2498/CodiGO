@@ -8,6 +8,10 @@
     color: #B9BDCF;
     font-family: Roboto;
     font-weight: 100;
+    
+    input[type="search"] {
+        -webkit-appearance: none;
+    }
 
     &__small{
         display: none;
