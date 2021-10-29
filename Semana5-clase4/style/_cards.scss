@@ -1,0 +1,79 @@
+@import "./mixers";
+
+.cards-container{
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    &:nth-child(1){
+        margin-top: 0;
+    }
+}
+
+.card{
+    @include d-flex-spBet;
+    /*margin: 2rem 1rem 2rem 1rem;*/
+    @media (max-width:600px) {
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    .card-img-info{
+        @include d-flex-center;       
+        .card-img{
+            img{
+                border-radius: 4px;
+
+            }
+        }
+
+        .card-info{
+            height: 90px;
+            @include d-flex-spBet;
+            align-items: flex-start;
+            flex-direction: column;
+            color: #334680;
+            margin-left: 1rem;
+            h3{
+                margin: 0;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 14px;
+                margin-bottom: 8px;
+            }
+            h2{
+                margin: 0;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }  
+    }
+    .card-location-time{
+        align-self: flex-end;
+        @media (max-width:600px) {
+            @include d-flex-end;
+            justify-content: flex-end;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .location{
+            i{
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+                color: #B9BDCF;
+                span{
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 14px;
+                    font-family: Roboto;
+                    color: #B9BDCF;  
+                }              
+            }
+        }
+    }
+}

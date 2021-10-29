@@ -1,0 +1,47 @@
+.btn{
+    background: #1E86FF;
+    border-radius: 4px;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    font-family: Roboto;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #65adff;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-time{
+    margin: 0;
+    border: 1px solid #334680;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background:transparent;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #334680;
+    padding:6px;
+}
+
+.btn-numb{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color:#B7BCCE;
+    font-size: 12px;
+    margin-left: 0.5rem;
+}
+
+.btn-numb:nth-child(6){
+    border:none;
+    font-weight: 900;
+}
