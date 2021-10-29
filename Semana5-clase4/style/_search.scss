@@ -9,10 +9,6 @@
     font-family: Roboto;
     font-weight: 100;
     
-    input[type="search"] {
-        -webkit-appearance: none;
-    }
-
     &__small{
         display: none;
         @media (max-width:320px) {
@@ -24,9 +20,17 @@
         display: none;
         @media(max-width:420px) {
             display: inline-block;
+            .input[type="search"] {
+                -webkit-appearance: none;
+            }
+        
         }
         @media (max-width:320px) {
             display: none;
+            .input[type="search"] {
+                -webkit-appearance: none;
+            }
+        
         } 
     }
     
@@ -34,6 +38,9 @@
         display: inline-block;
         @media (max-width:420px) {
             display: none;
+            .input[type="search"] {
+                -webkit-appearance: none;
+            }
         } 
     }
 }
