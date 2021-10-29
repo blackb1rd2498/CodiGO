@@ -1,0 +1,17 @@
+@import "./btn";
+@import "./cards";
+@import "./footer";
+@import "./header";
+@import "./search";
+@import "./mixers";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;900&family=Roboto:wght@100;300;500;700;900&display=swap');
+
+body{
+    background: #F6F7FB;
+    font-family: Poppins;
+    margin: 0rem 3rem 0rem 3rem;
+    @include d-flex-spBet;
+    flex-direction: column;
+    height: 100vh;
+}
