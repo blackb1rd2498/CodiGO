@@ -13,5 +13,135 @@ body{
     margin: 0rem 3rem 0rem 3rem;
     @include d-flex-spBet;
     flex-direction: column;
-    height: 100vh;
+    @media (max-width:1000px) {
+        margin: 0.5rem;
+    }
+}
+
+/*MAIN CODE*/
+
+main{
+    width: 100%;
+    height: 100%;
+    @include d-flex-spBet;
+    flex-direction: column;
+    
+    .container{
+        background-image: url("https://picsum.photos/200");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:100%;
+        height: 138px;
+        border-radius: 8px;
+        @include d-flex-center;
+
+        .search-container{
+            position: relative;
+            width: 90%;
+            @media (max-width:420px) {
+                input:placeholder-shown "Title, companies, experti...";
+            }        
+            i{
+                position: absolute;
+                top: 1.2rem;
+                left: 0.5rem;
+                color: #B9BDCF;
+            }
+            button{
+                position:absolute;
+                top:0.25rem;
+                right: 0.2rem;
+            }
+        }
+    }
+
+    .container-filter-jobs{
+        margin-top: 2.5rem;
+        @include d-flex-spBet;
+        height: 100%;
+        width: 100%;
+
+        @media (max-width:1000px) {
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .filter{
+            margin:0rem 2rem 3rem 1rem;
+            align-self: flex-start;
+            width: 30%;
+
+            @media (max-width:1000px) {
+                width: 100%;
+                margin: 0.5rem;
+            }
+
+            .checkbox{
+                label{
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #334680;
+                }
+            }
+
+            h3{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+                color: #B9BDCF;
+            }
+
+            .search-container{
+                width: 80%;
+                position: relative;
+
+                .input{
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+                    height: 48px;
+                }
+
+                i{
+                    position: absolute;
+                    top: 1.2rem;
+                    left: 0.5rem;
+                    color: #B9BDCF;
+                }
+            }
+
+            .radio-options{
+                margin-top: 1rem;
+                input{
+                    margin: 1rem;
+                }
+                label{
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #334680;
+                }
+            }
+        }
+        .jobs{
+            height: 100%;
+            width: 70%;
+
+            @media (max-width:1000px) {
+                width: 100%;
+            }
+
+            .btn-pages{
+                @include d-flex-end;
+                justify-content: flex-end;
+                margin-top: 2rem;
+                align-content: flex-end;               
+            }
+        }
+    }
 }
