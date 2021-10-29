@@ -1,0 +1,13 @@
+@import "./mixers";
+
+header{
+    align-self: flex-start;
+    .header{      
+        h2{
+            font-weight: 700;
+            span{
+                font-weight: 300;
+            }
+        }   
+    }
+}

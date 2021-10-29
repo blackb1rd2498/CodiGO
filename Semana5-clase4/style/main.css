@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;900&family=Roboto:wght@100;300;500;700;900&display=swap");
+.footer p {
+  color: #B9BDCF;
+  font-family: Poppins;
+}
+
+.footer p span {
+  font-weight: 600;
+}
+
+header {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+header .header h2 {
+  font-weight: 700;
+}
+
+header .header h2 span {
+  font-weight: 300;
+}
+
+body {
+  background: #F6F7FB;
+  font-family: Poppins;
+  margin: 0rem 3rem 0rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+/*# sourceMappingURL=main.css.map */
