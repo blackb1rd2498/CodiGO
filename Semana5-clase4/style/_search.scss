@@ -14,9 +14,7 @@
         display: none;
         @media (max-width:320px) {
             display: inline-block;
-            -webkit-appearance: none;  
-            -webkit-appearance: none;
-            border-radius: 4px;
+            -webkit-border-radius:0px;
         } 
     }
 
@@ -24,14 +22,12 @@
         display: none;
         @media(max-width:420px) {
             display: inline-block;
-            -webkit-appearance: none;
-            border-radius: 4px;        
+            -webkit-border-radius:0px;     
         }
 
         @media (max-width:320px) {
             display: none;
-            -webkit-appearance: none;
-            border-radius: 4px;    
+            -webkit-border-radius:0px;   
         } 
     }
     

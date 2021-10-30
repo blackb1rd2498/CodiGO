@@ -362,9 +362,7 @@ header .header h2 span {
 @media (max-width: 320px) {
   .input__small {
     display: inline-block;
-    -webkit-appearance: none;
-    -webkit-appearance: none;
-    border-radius: 4px;
+    -webkit-border-radius: 0px;
   }
 }
 
@@ -375,16 +373,14 @@ header .header h2 span {
 @media (max-width: 420px) {
   .input__medium {
     display: inline-block;
-    -webkit-appearance: none;
-    border-radius: 4px;
+    -webkit-border-radius: 0px;
   }
 }
 
 @media (max-width: 320px) {
   .input__medium {
     display: none;
-    -webkit-appearance: none;
-    border-radius: 4px;
+    -webkit-border-radius: 0px;
   }
 }
 
