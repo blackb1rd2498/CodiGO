@@ -309,6 +309,12 @@
   color: #334680;
 }
 
+footer {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .footer p {
   color: #B9BDCF;
   font-family: Poppins;
@@ -356,6 +362,9 @@ header .header h2 span {
 @media (max-width: 320px) {
   .input__small {
     display: inline-block;
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 4px;
   }
 }
 
@@ -366,12 +375,16 @@ header .header h2 span {
 @media (max-width: 420px) {
   .input__medium {
     display: inline-block;
+    -webkit-appearance: none;
+    border-radius: 4px;
   }
 }
 
 @media (max-width: 320px) {
   .input__medium {
     display: none;
+    -webkit-appearance: none;
+    border-radius: 4px;
   }
 }
 
@@ -383,50 +396,43 @@ header .header h2 span {
   .input__large {
     display: none;
   }
+  .input__large .input[type="search"] {
+    -webkit-appearance: none;
+  }
 }
 
 body {
   background: #F6F7FB;
   font-family: Poppins;
+  height: 100%;
+  margin: 0;
+}
+
+.body-cont {
   margin: 0rem 3rem 0rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-height: 100vh;
 }
 
 @media (max-width: 1000px) {
-  body {
+  .body-cont {
     margin: 0.5rem;
   }
 }
 
 /*MAIN CODE*/
 main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 main .container {
@@ -450,12 +456,6 @@ main .container {
 main .container .search-container {
   position: relative;
   width: 90%;
-}
-
-@media (max-width: 420px) {
-  main .container .search-container {
-    input: placeholder-shown "Title, companies, experti...";
-  }
 }
 
 main .container .search-container i {
