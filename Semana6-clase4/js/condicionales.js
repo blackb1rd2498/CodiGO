@@ -1,5 +1,12 @@
 //use alt+96 to create `` and you can use them to add variable into returns
 
+
+/*
+    TYPE OF CONDITIONALS / TIPOS DE CONDICIONALES
+*/
+
+/* IF ELSE */
+
 const AGE_MAX=18;
 const SEX = 'm';
 
@@ -30,6 +37,8 @@ function theBar(){
 }
 
 //theBar();
+
+/* SWITCH */
 
 function flavourFound(flavour){
     return `Your flavour ${flavour} has been found `;
@@ -72,5 +81,45 @@ function theIceCreamShop(){
     alert('See you soon!')
 }
 
-theIceCreamShop();
+//theIceCreamShop();
 
+
+/* THROW - TRY CATCH FINALLY */
+
+function sum(a,b){
+    if(arguments.length>2){
+        throw console.error('No soporta mas de 2 argumentos');
+    }
+    return a+b;
+}
+
+// sum(a,b,c);
+// console.log('This is and error by THROW')
+
+/* this function will only allow password longer than 7 */
+
+function savePass(password){
+    let message = '';
+    try{
+        if(password.length < 6) throw 'SHORT';
+        if(password.length > 10) throw 'LONG'; 
+
+        message = `The password ${password} allowed`;
+    }   
+        catch(err){
+            if(err='SHORT'){
+                message = `The password ${password} is too short`
+            }
+            if(err='LONG'){
+                message = `The password ${password} is too long`
+            }
+    }
+        finally{
+            console.log('Passwords approved', message);
+        }
+}
+
+savePass('12345');
+savePass('123456');
+savePass('1234567');
+savePass('12345678');
