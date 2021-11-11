@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DINAMIC DOM</title>
+    
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: arial;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            transition: all .5s ease;
+            border-radius: 8px;
+            border: 1px solid olive;
+        }
+
+        input:focus{
+            outline: none;
+            box-sizing: 0 0 3px #dadada;
+        }
+
+        input:focus:required{
+            border-color: palegreen;
+        }
+
+        div{
+            padding: 10px;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background: burlywood;
+            color: cadetblue;
+            border: 1px solid lightcoral;
+        }
+
+        h1{
+            text-align: center;
+            margin: 20px 0 10px;
+        }
+
+        .app{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+            border: 1px solid #cdcdcd;
+            margin: 15px;
+            border-radius: 6px;
+            background: #ebebeb;
+        }
+
+        .card{
+            border: 1px solid #cdcdcd;
+            padding: 10px;
+            border-radius: 6px;
+            position: relative;
+            background: white;
+        }
+
+        .card:hover{
+            box-shadow: 0 0 10px rgb(161, 161, 161);
+        }
+
+        .card h2{
+            font-size: 13px;
+            color: #616161;
+            margin-bottom: 4px;
+        }
+
+        .card h2 span{
+            color: black;
+        }
+
+        .card img{
+            width: 100%;
+        }
+
+        .card button{
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background: red;
+            color: white;
+            border: 1px solid red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORMULARIO</h1>
+    <form >
+        <div>
+            <input 
+            class="js_name"
+            type="text" placeholder="Nombre"
+            required>
+        </div>
+        <div>
+            <input 
+            class="js_lastname"
+            type="text" placeholder="Apellido"
+            required>
+        </div>
+        <div>
+            <input 
+            class="js_age"
+            type="number" placeholder="Edad"
+            required>
+        </div>
+        <div>
+            <input 
+            class="js_photo"
+            type="text" placeholder="URL FOTOGRAFIA"
+            required>
+        </div>     
+        <div>
+            <button>ENVIAR</button>
+        </div>
+    </form>
+    <div id="app" class="app"></div>
+    <script>
+        const inputName=document.querySelector('.js_name')
+        const inputLastname=document.querySelector('.js_lastname')
+        const inputAge=document.querySelector('.js_age')
+        const inputPhoto=document.querySelector('.js_photo')
+        const form=document.querySelector('form');
+
+        form.addEventListener('submit',function (e) {
+            e.preventDefault()
+
+            const article=document.createElement('article');
+
+            article.innerHTML = `
+                <h2>Nombre completo: <span> ${inputName.value} ${inputLastname.value}</span></h2>
+                <h2>Edad: <span>${inputAge.value}</span></h2>
+                <figure>
+                    <img src=${inputPhoto.value} alt="${inputName.value} ${inputLastname.value}">    
+                </figure>
+                <button>X</button>
+            `
+            article.classList.add('card')
+            article.querySelector('button').onclick=function(){
+                const flag=confirm('Deseas eleminar la tarjeta?');
+                if(flag) app.removeChild(article);
+               //if(flag) article.remove()
+            }
+
+            console.log('article',article)
+
+            app.appendChild(article)
+
+            this.reset()
+        })
+    </script>
+</body>
+</html>

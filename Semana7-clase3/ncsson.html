@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .d-show{
+            display: none;
+        }
+        
+        .d-none{
+            display: none;
+        }
+
+        .format-title{
+            background-color: aquamarine;
+            color: lightcoral;
+            padding:20px;
+        }
+
+        .button-active{
+            background: greenyellow;
+            color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <h1>TITULO PRINCIPAL</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nulla, temporibus quae est at eius veniam odio incidunt architecto aspernatur accusantium laborum molestias blanditiis perspiciatis facilis voluptatem facere voluptate laudantium voluptates possimus. Ad sequi culpa reiciendis doloremque rerum amet in!</p>
+    <button>BUTTON</button>
+
+    <script>
+        const h1=document.querySelector('h1');
+        const button=document.querySelector('button');
+
+        button.onclick=function(){
+            console.log('this.textContent', this.textContent);
+            if(this.textContent=='Presionado'){
+                
+            }
+        }
+    </script>
+</body>
+</html>
