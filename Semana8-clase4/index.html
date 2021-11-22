@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registrar alumnos</h1>
+    <form action="">
+        <input class="js_name" type="text" placeholder="Nombre" required>
+        <input class="js_lastname" type="text" placeholder="Apellido" required>
+        <input class="js_age" type="number" placeholder="Edad" required>
+        <button>enviar</button>
+    </form>
+    <div id="container">
+        <path xmlns="http://www.w3.org/2000/svg" d="M9480 5969 c-679 -39 -1247 -265 -1698 -676 -340 -309 -614 -751 -779 -1253 -36 -112 -103 -372 -103 -402 0 -11 -11 -23 -27 -29 -84 -32 -115 -54 -141 -98 l-27 -46 0 -405 c0 -404 0 -405 23 -445 42 -73 110 -105 227 -105 117 0 196 35 230 101 9 16 23 29 33 29 9 -1 427 -214 927 -474 794 -413 910 -477 913 -497 8 -84 26 -133 60 -172 94 -104 244 -103 334 2 123 144 22 361 -167 361 -45 0 -69 -6 -114 -31 l-56 -31 -929 483 c-511 265 -938 483 -950 484 -21 2 -21 5 -26 356 -4 315 -7 358 -23 387 -16 29 -80 85 -110 95 -15 5 3 100 53 274 56 195 117 353 209 538 372 749 993 1211 1811 1349 178 30 313 40 550 40 422 0 738 -53 1065 -179 767 -295 1309 -954 1539 -1872 33 -130 33 -141 -1 -149 -53 -12 -108 -52 -133 -96 l-25 -43 -3 -382 c-2 -253 1 -396 8 -423 12 -46 59 -104 103 -127 17 -8 64 -17 106 -20 143 -10 234 27 272 111 17 38 19 72 19 436 0 367 -2 398 -19 437 -17 36 -78 94 -112 105 -5 2 -21 55 -35 118 -174 784 -590 1427 -1172 1812 -407 268 -854 406 -1422 438 -201 11 -198 11 -410 -1z"/>
+    </div>
+
+    <script>
+     function registerAlumn(){
+        const name = document.querySelector('.js_name')
+        const lastname = document.querySelector('.js_lastname')
+        const age = document.querySelector('.js_age')
+        const form = document.querySelector('form')
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault()
+            const body = {
+                name: name.value,
+                lastname: lastname.value,
+                age: age.value
+            }
+                
+            fetch('http://localhost:3000/alumnos',{
+                method: 'POST',
+                body: JSON.stringify(body),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+                }).then((response) => {
+                    return response.json()
+                }).then((response) =>{
+                    console.log('response')
+                })
+            })
+        }
+
+        registerAlumn()
+
+    </script>
+</body>
+</html>

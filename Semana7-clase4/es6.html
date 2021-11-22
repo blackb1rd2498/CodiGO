@@ -17,6 +17,40 @@
         console.log(fn(2,3))
 
         console.log(fnArrow(3,4))
+
+        //parametro spor defecto
+        function getData(name='fernando', lastname='quispe',age=23){
+            return `${name} ${lastname} ${age}`
+        }
+
+        //paramentros rest
+        function suma(a,b, ...c){
+            let resultado = a+b;
+            
+            c.forEach((n)=>{
+                resultado=resultado+n
+            })
+
+            return resultado
+        }
+
+        console.log(suma(1,2,3,4,5,6,7,8,9,10))
+        
+
+        //spread operator
+        const datos=["hola","como","estas","ole"]
+
+        console.log(...datos)
+        console.log(datos[0],datos[1],datos[2],datos[3])
+
+        function limpiarEspacios(...cadenas){
+            for (let i = 0; i < cadenas.length; i++) {
+                cadenas[i] = cadenas[i].trim();
+            }
+            return cadenas;
+        }
+
+            
 </script>
 </body>
 </html>

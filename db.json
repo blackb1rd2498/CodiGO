@@ -1,0 +1,37 @@
+{
+  "alumnos": [
+    {
+      "id": 1,
+      "name": "fernando",
+      "lastname": "quispe",
+      "age": 32
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "name": "fer",
+      "lastname": "quis",
+      "age": "23",
+      "id": 9
+    }
+  ]
+}
